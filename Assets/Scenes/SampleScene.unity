@@ -1913,30 +1913,6 @@ MonoBehaviour:
   - enemyPrefab: {fileID: 8197800819178468099, guid: 2b5fe51c185a320448b0d2e36a0c0740,
       type: 3}
     num: 1
-  - enemyPrefab: {fileID: 8197800819178468099, guid: 2b5fe51c185a320448b0d2e36a0c0740,
-      type: 3}
-    num: 1
-  - enemyPrefab: {fileID: 8197800819178468099, guid: 2b5fe51c185a320448b0d2e36a0c0740,
-      type: 3}
-    num: 1
-  - enemyPrefab: {fileID: 8197800819178468099, guid: 2b5fe51c185a320448b0d2e36a0c0740,
-      type: 3}
-    num: 1
-  - enemyPrefab: {fileID: 8197800819178468099, guid: 2b5fe51c185a320448b0d2e36a0c0740,
-      type: 3}
-    num: 1
-  - enemyPrefab: {fileID: 8197800819178468099, guid: 2b5fe51c185a320448b0d2e36a0c0740,
-      type: 3}
-    num: 1
-  - enemyPrefab: {fileID: 8197800819178468099, guid: 2b5fe51c185a320448b0d2e36a0c0740,
-      type: 3}
-    num: 1
-  - enemyPrefab: {fileID: 8197800819178468099, guid: 2b5fe51c185a320448b0d2e36a0c0740,
-      type: 3}
-    num: 1
-  - enemyPrefab: {fileID: 8197800819178468099, guid: 2b5fe51c185a320448b0d2e36a0c0740,
-      type: 3}
-    num: 1
 --- !u!4 &931057606
 Transform:
   m_ObjectHideFlags: 0
