@@ -64,20 +64,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AvailableMatchesList.cs" />
+    <Compile Include="Assets\Scripts\Billboard.cs" />
     <Compile Include="Assets\Scripts\BuildingManager.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\CustomNetworkManager.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\GameListPanel.cs" />
+    <Compile Include="Assets\Scripts\Health.cs" />
+    <Compile Include="Assets\Scripts\IA\Agro.cs" />
+    <Compile Include="Assets\Scripts\IA\Inimigo.cs" />
+    <Compile Include="Assets\Scripts\IA\NpcMovimento.cs" />
+    <Compile Include="Assets\Scripts\IA\Recursos.cs" />
+    <Compile Include="Assets\Scripts\IA\Storage.cs" />
     <Compile Include="Assets\Scripts\JoinButton.cs" />
     <Compile Include="Assets\Scripts\PathNode.cs" />
+    <Compile Include="Assets\Scripts\PlayerBullet.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\Tower.cs" />
     <Compile Include="Assets\Scripts\TowerSpot.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/filip/Desktop/Multiplataforma/Multiplataforma/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Editor">
+      <HintPath>C:/Users/filip/Desktop/Multiplataforma/Multiplataforma/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/filip/Desktop/Multiplataforma/Multiplataforma/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
@@ -94,6 +105,9 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/filip/Desktop/Multiplataforma/Multiplataforma/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.multiplayer-weaver.Editor">
+      <HintPath>C:/Users/filip/Desktop/Multiplataforma/Multiplataforma/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>C:/Users/filip/Desktop/Multiplataforma/Multiplataforma/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
@@ -102,12 +116,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/filip/Desktop/Multiplataforma/Multiplataforma/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>C:/Users/filip/Desktop/Multiplataforma/Multiplataforma/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>C:/Users/filip/Desktop/Multiplataforma/Multiplataforma/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>C:/Users/filip/Desktop/Multiplataforma/Multiplataforma/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>

@@ -5,6 +5,8 @@ using UnityEngine.Networking;
 public class PlayerMovement : NetworkBehaviour
 {
     public float moveSpeed;
+    public GameObject bulletPrefab;
+    public Transform bulletSpawn;
     private Rigidbody rb;
 
     private Vector3 moveInput;
@@ -25,6 +27,11 @@ public class PlayerMovement : NetworkBehaviour
         {
             moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
             moveVelocity = moveInput * moveSpeed;
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            CmdFire();
         }
        
     }
@@ -49,6 +56,21 @@ public class PlayerMovement : NetworkBehaviour
         rb.velocity = moveVelocity;
 
        
+    }
+    [Command]
+    void CmdFire()
+    {
+        // criar a bala a partir do prefab
+        GameObject bullet = (GameObject)Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+
+        //velocidade da bala
+        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 10.0f;
+
+        //Spawnar a bala no cliente
+        NetworkServer.Spawn(bullet);
+
+        //Destroy a bala
+        Destroy(bullet, 2);
     }
 
 
