@@ -7,6 +7,7 @@ public class JoinButton : MonoBehaviour
 {
     private Text buttonText;
     private MatchInfoSnapshot match;
+   
 
     private void Awake()
     {
@@ -21,10 +22,12 @@ public class JoinButton : MonoBehaviour
         transform.localScale = Vector3.one;
         transform.localRotation = Quaternion.identity;
         transform.localPosition = Vector3.zero;
+       
     }
 
     public void JoinMatch()
     {
         FindObjectOfType<CustomNetworkManager>().JoinGame(match);
+      GetComponentInParent<Canvas>().enabled = false;
     }
 }

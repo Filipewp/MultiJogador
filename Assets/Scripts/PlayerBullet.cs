@@ -8,10 +8,18 @@ public class PlayerBullet : MonoBehaviour
     {
         GameObject hit = collision.gameObject;
         Health health = hit.GetComponent<Health>();
-        if(health !=null)
+        if (health !=null)
         {
             health.TakeDamage(10);
         }
         Destroy(gameObject);
+
+        EnemyHealth enemyhealth = hit.GetComponent<EnemyHealth>();
+        if (enemyhealth != null)
+        {
+            enemyhealth.TakeDamage(10);
+        }
+        Destroy(gameObject);
     }
+
 }

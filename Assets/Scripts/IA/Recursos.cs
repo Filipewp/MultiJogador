@@ -9,7 +9,7 @@ public class Recursos : MonoBehaviour
 
     void Start()
     {
-        minerios = 5;
+        minerios = 2;
     }
 
 

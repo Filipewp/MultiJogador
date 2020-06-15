@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class EnemySpawner : MonoBehaviour
+public class EnemySpawner : NetworkBehaviour
 {
 	float spawnCD = 0.25f;
 	float spawnCDremaining = 5;
@@ -41,8 +42,8 @@ public class EnemySpawner : MonoBehaviour
 				{
 					// Spawn it!
 					wc.spawned++;
-					Instantiate(wc.enemyPrefab, this.transform.position, this.transform.rotation);
-
+					GameObject spawnEnemy = Instantiate(wc.enemyPrefab, this.transform.position, this.transform.rotation);
+					NetworkServer.Spawn(spawnEnemy);
 					didSpawn = true;
 					break;
 				}
@@ -66,7 +67,7 @@ public class EnemySpawner : MonoBehaviour
 					// but double all enemy HPs or something?
 				}
 
-				Destroy(gameObject);
+				NetworkServer.Destroy(gameObject);
 			}
 		}
 	}

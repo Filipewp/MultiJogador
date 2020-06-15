@@ -219,3 +219,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e898796d9a2b534ebfde94ef3a61687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  netCanvas: {fileID: 0}

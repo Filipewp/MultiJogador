@@ -9,18 +9,19 @@ using UnityEngine.Networking.Match;
 public class CustomNetworkManager : NetworkManager
 {
     private float nextRefreshTime;
-
+  
     public void StartHosting()
     {
         StartMatchMaker();
         matchMaker.CreateMatch("Jason Match", 4, true, "", "", "", 0, 0, OnMatchCreated);
-
+       
     }
 
     private void OnMatchCreated(bool success, string extendedInfo, MatchInfo responseData)
     {
         base.StartHost(responseData);
         RefreshMatches();
+        
     }
 
     private void Update()
@@ -61,5 +62,8 @@ public class CustomNetworkManager : NetworkManager
     {
         AvailableMatchesList.HandleNewMatchList(responseData);
     }
+
+
+    
 }
 
