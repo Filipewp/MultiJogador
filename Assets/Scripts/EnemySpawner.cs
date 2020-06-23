@@ -5,8 +5,8 @@ using UnityEngine.Networking;
 
 public class EnemySpawner : NetworkBehaviour
 {
-	float spawnCD = 0.25f;
-	float spawnCDremaining = 5;
+	public float spawnCD = 0.25f;
+	public float spawnCDremaining = 5;
 
 	[System.Serializable]
 	public class WaveComponent
